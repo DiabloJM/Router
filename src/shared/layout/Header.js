@@ -1,32 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import logo from '../images/logo.svg';
+import logo from '../images/Chunchomin.png';
 import {Link} from 'react-router-dom';
 
 const Header = (props) => {
     
-    const {title, url} = props;
+    const {url} = props;
  
     return (
         <header className="App-header">
             
-            <a href={url}>
-                <img src={logo} className="App-logo" alt="logo" />
-            </a>
+            <div className="App-header-logo">
+                <div href={url}>
+                    <img src={logo} className="App-logo" alt="logo" />
+                    <h1>José Fernando Jiménez Michel</h1>
+                </div>
+            </div>
 
-            <h1 style={{marginRight: 450}}>{title}</h1>
-
-            <Link className="App-links" to={`/`}>Home</Link>
-            <Link className="App-links" to={`/about`}>About</Link>
-            <Link className="App-links" to={`/notes`}>Notes</Link>
-            <Link className="App-links" to={`/contact`}>Contact</Link>
+            <ul>
+                <li><Link to={`/`}>Curriculum Vitae</Link></li>
+                <li><Link to={`/about`}>Portafolio</Link></li>
+                <li><Link to={`/contact`}>Contacto</Link></li>
+            </ul>
 
         </header>
     );
 }
 
 Header.propTypes = {
-    title: PropTypes.string.isRequired,
     url: PropTypes.string
 }
 

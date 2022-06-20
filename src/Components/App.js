@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../shared/layout/Header';
 import './App.css';
-import Footer from '../shared/layout/Footer';
 import Content from '../shared/layout/Content';
+import Popup from 'reactjs-popup';
 
 import {element} from 'prop-types';
 
@@ -14,7 +14,7 @@ function App(props) {
       <Content >
         {props.children}
       </Content>
-      <Footer />
+      <Popup/>
     </div>
   );
 

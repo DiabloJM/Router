@@ -30,11 +30,10 @@ const Notes = () => {
                     <Link to = {`/notes/${note.id}`}>{`Note ${note.id}`}</Link>
                     {
                         selectedNote ? 
-                            <h2>
-                                {note.title}
-                                <br/>
-                                {note.description}
-                            </h2>
+                            <div>
+                                <h2>{note.title}</h2>
+                                <p>{note.description}</p>
+                            </div>
                         :
                         <a></a>
 

@@ -1,0 +1,23 @@
+.Contact {
+    margin-left: 120px;
+}
+
+.Contact .Title {
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.Contact .container {
+    justify-content: center;
+    background-color: rgb(74, 180, 113);
+    border: 5 solid rgb(215, 64, 64);
+    border-radius: 3,
+}
+
+.Contact .error{
+    border: 1px solid red;
+}
+
+.Contact .errorMessage {
+    color: red;
+    font-size: 10px;
+}

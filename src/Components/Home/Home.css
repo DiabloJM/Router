@@ -1,0 +1,21 @@
+.Curriculum {
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+.Title {
+    color: #000;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.Subtitle {
+    color: #bf360c;
+    margin-bottom: 10px; 
+
+}
+
+.Text {
+    color: #8e8e8e;
+    margin-bottom: 50px;
+}
